@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SHOES</title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/amazon.css" %}">
+    <style media="screen">
+    h2{
+      color:white;
+    }
+    .jumbotron{
+      background: #000000;
+    }
+    .container{
+      background: white;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse">
+  <a class="navbar-brand" href="/amazon1">indian AMAZON</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="/history">HOME</a>
+      <a class="nav-link active" href="/about">ABOUT US</a>
+      <a class="nav-link active" href="/feedback">FEEDBACK</a>
+      <a class="nav-link active" href="/products">PRODUCTS</a>
+      <a class="nav-link active" href="/logout">LOGOUT</a>
+    </div>
+  </div>
+  </nav>
+
+    <div class="container" align=center>
+      <div class="jumbotron">
+        <h2><i><b><small>WELCOME TO SHOES SECTION</small></b></i></h2>
+
+      </div>
+
+    </div>
+    <a href="/amazon1" role="button" class="btn btn-primary btn-secondary">NEXT</a>
+  </body>
+</html>

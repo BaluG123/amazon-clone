@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/amazon.css" %}">
+    <script src="{% static "js/jqery.js" %}" >
+
+    </script>
+
+  </head>
+  <body>
+    <div class="continer" align=center>
+      <div class="jumbotron">
+    <div class="tshirt">
+    <img src="{% static "images/amz9.jpg" %}" alt="">
+    <h5 id="five">price:2$</h5>
+    QUALITY:<select class="select" name="">
+      <option value="one">1</option>
+      <option value="two">2</option>
+      <option value="three">3</option>
+      <option value="four">4</option>
+      <option value="five">5</option>
+
+    </select><br><br>
+    <a href="#" role="button" class="btn btn-primary ">CONFIRM</a>
+    <button type="button" name="button" class="btn btn-secondary">BUY</button>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src={% static "js/tshirt.js"%}>
+
+</script>
+
+  </body>
+</html>

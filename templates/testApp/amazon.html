@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/amazon.css" %}">
+    <style media="screen">
+    nav{
+      background: black;
+      color:white;
+    }
+      body{
+        color:black;
+        background: url({% static "images/wal3.jfif" %})
+      }
+      .one{
+        border:2px solid black;
+      }
+      a{
+        color:black;
+        padding:2px;
+        margin-top: 20px;
+      }
+      .jumbotron{
+        background:url({% static "images/wal4.jfif"%})
+
+      }
+
+    </style>
+    <script src={% static "js/jqery.js"%}>
+
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse">
+  <a class="navbar-brand" href="/amazon1">indian AMAZON</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="/history">HOME</a>
+      <a class="nav-link active" href="/about">ABOUT US</a>
+      <a class="nav-link active" href="/feedback">FEEDBACK</a>
+      <a class="nav-link active" href="/products">PRODUCTS</a>
+      <a class="nav-link active" href="/logout">LOGOUT</a>
+    </div>
+  </div>
+</nav>
+{% for key,value in request.seesion.items %}
+<ul>
+  <li>{{key}}:{{value}}</li>
+</ul>
+{% endfor %}
+    <div class="container" align=center>
+      <div class="jumbotron">
+       <h1 style="color:red;">WELCOME TO AMAZON..!!</h1>
+       <p style="color:red;">thanks</p><br><br><br><br><br>
+       <div class="row">
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box1" style="background:url({% static "images/phone.jfif" %})"> <a href="/mobiles">MOBILES</a> </div></div>
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box2" style="background:url({% static "images/laptop.jfif" %})"> <a href="/laptops">LAPTOPS</a> </div></div>
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box3" style="background:url({% static "images/vehicle.jfif" %})"> <a href="/vehicles">VEHICLES</a> </div></div>
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box4" style="background:url({% static "images/clothes.jfif" %})"> <a href="/clothes">CLOTHES</a> </div></div>
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box5" style="background:url({% static "images/earphone.jfif" %})"> <a href="/earphones">EARPHONE</a> </div></div>
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box6" style="background:url({% static "images/shoes.jfif" %})"> <a href="/shoes">SHOES</a> </div></div>
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box5" style="background:url({% static "images/football.jfif" %})"> <a href="/football">FOOTBALL</a> </div></div>
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box6" style="background:url({% static "images/volleyball.jfif" %})"> <a href="/volleyball">VOLLEYBALL</a> </div></div>
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box4" style="background:url({% static "images/cricket.jfif" %})"> <a href="/cricket">CRICKET</a> </div></div>
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box3" style="background:url({% static "images/tennis.jfif" %})"> <a href="/tennis">TENNIS</a> </div></div>
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box1" style="background:url({% static "images/toys.jfif" %})"> <a href="/toys">TOYS</a> </div></div>
+         <div class="col-lg-2 col-md-6 col-xs-12"> <div class="box2" style="background:url({% static "images/shirts.jfif" %})"> <a href="/shirts">SHIRTS</a> </div></div>
+       </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz9.jpg" %}" alt=""><p>price:2$</p><a href="/tshirt" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz1.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz2.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz3.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz4.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz5.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz6.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz7.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz8.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz9.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz10.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz9.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz10.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz11.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz12.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz13.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz14.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz15.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz6.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz7.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz8.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz9.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+      <div class="col-lg-3 col-md-6 col-xs-12"><div class="one" align=center><img src="{% static "images/amz10.jpg" %}" alt=""><p>price:2$</p><a href="#" role="button" class="btn btn-primary btn-secondary">buy</a></div></div>
+
+    </div>
+    <div class="button">
+    <a href="/second" role="button" class="btn btn-primary btn-secondary" class="button">NEXT</a>
+  </div>
+  <script type="text/javascript" src={% static "js/amazon.js"%}>
+
+  </script>
+
+  </body>
+</html>

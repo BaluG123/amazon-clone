@@ -1,0 +1,146 @@
+img{
+  padding:4px;
+  margin-left: 2px;
+  height:250px;
+  width: 300px;
+}
+.one{
+  width:87%;
+  border:2px solid black;
+  margin-left: 20px;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+.row{
+  padding: 2px;
+
+}
+body{
+  color: white;
+}
+h1{
+  text-align: center;
+  color:red;
+}
+.container .jumbotron{
+  margin-top: 20px;
+}
+.button{
+  text-align: center;
+}
+.box1{
+  height:135px;
+  width: 135px;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 5px;
+  color:white;
+
+  margin-left: 20px;
+  font-size: 20px;
+  font-family:monospace;
+  padding: 45px 0px 45px 0px;
+}
+.box2{
+  height:135px;
+  width: 135px;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-align: center;
+
+  margin-bottom: 5px;
+  color:white;
+  background: indigo;
+  margin-left: 20px;
+  font-size: 20px;
+  font-family:monospace;
+  padding: 45px 0px 45px 0px;
+}
+.box3{
+  height:135px;
+  width: 135px;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-align: center;
+
+  margin-bottom: 5px;
+  color:white;
+  background: green;
+  margin-left: 20px;
+  font-size: 20px;
+  font-family:monospace;
+  padding: 45px 0px 45px 0px;
+}
+.box4{
+  height:135px;
+  width: 135px;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-align: center;
+  text-shadow: 10px;
+
+  margin-bottom: 5px;
+  color:white;
+  background: red;
+  margin-left: 20px;
+  font-size: 20px;
+  font-family:monospace;
+  padding: 45px 0px 45px 0px;
+}
+.box5{
+  height:135px;
+  width: 135px;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-align: center;
+
+  margin-bottom: 5px;
+  color:white;
+  background: blue;
+  margin-left: 20px;
+  font-size: 20px;
+  font-family:monospace;
+  padding: 45px 0px 45px 0px;
+}
+.box6{
+  height:135px;
+  width: 135px;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-align: center;
+
+  margin-bottom: 5px;
+  color:white;
+  background: orange;
+  margin-left: 20px;
+  font-size: 20px;
+  font-family:monospace;
+  padding: 45px 0px 45px 0px;
+}
+
+
+
+.container{
+  background: black;
+}
+
+
+
+.tshirt{
+  border:2px solid black;
+  height:380px;
+  width: 310px;
+  text-align: center;
+  margin: 5px;
+  background: green;
+}
+audio{
+  height: 135px;
+  width: 135px;
+  background-size: cover;
+  padding: 5px;
+}
+.jumbotron{
+  background: #707070;
+}
